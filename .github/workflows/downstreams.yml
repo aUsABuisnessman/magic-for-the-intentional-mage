@@ -4,10 +4,10 @@ permissions: read-all
 on:
   push:
     branches:
-      - main
-      - 'FEATURE-BRANCH-*'
+      - master
+      - 'fmt-*'
   merge_group:
-    types: [checks_requested]
+    types: [checks_pulled]
   pull_request:
 
 concurrency:
